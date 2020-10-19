@@ -21,6 +21,7 @@ export const ResultItem: FunctionComponent<ResultProps> = ({ children, ...props 
     <a
       className={styles.result}
       href='#whatever-yelp-url'
+      data-testid='result-item'
       onClick={e => e.preventDefault()}
       title={`Go to ${result.name}`}
     >

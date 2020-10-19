@@ -38,7 +38,7 @@ Make sure you manually open [http://localhost:3000](http://localhost:3000) to vi
 
 Launches the test runner in the interactive watch mode.
 
-#### `make test-coverage`
+#### `make test-coverage` (run to generate the coverage reported by Jest's deps)
 
 This will generate a coverage folder with more details to be exported afterwards.
 
@@ -54,6 +54,10 @@ Please execute that in order to be aware of what commands you might be able to r
 
 ![how app works](./docs/preview.gif)
 
+## Tests Coverage
+
+![tests coverage](./docs/coverage.png)
+
 ## Ideas
 
 - [ ] **UX** <br/>
@@ -63,6 +67,8 @@ Please execute that in order to be aware of what commands you might be able to r
   - ...honestly, acessibility looks terrible! 😔
 - [ ] **Architectural** <br/>
   - The simple architecture choices here were taking agility into account, that's why I considered not improving it a lot;
+  - Tests
+    - omg, there were lots of spaces for tests here, however, I only added some because of time-spacing :(
 - [ ] **Performance** <br/>
   - I believe there's a lot of space for performance here;
 - [ ] **Reusable Code** <br/>

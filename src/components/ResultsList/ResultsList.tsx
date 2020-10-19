@@ -20,7 +20,7 @@ export const ResultsList: FunctionComponent<ResultsListProps> = ({ children, ...
   return (
     <section className={`row ${styles.results}`}>
       {!shouldShowResults && (
-        <img className={styles.loading} src={`${PUBLIC_URL}/loading.gif`} alt='Loading...'/>
+        <img data-testid='loading-image' className={styles.loading} src={`${PUBLIC_URL}/loading.gif`} alt='Loading...'/>
       )}
 
       { shouldShowResults && (

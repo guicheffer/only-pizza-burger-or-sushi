@@ -20,7 +20,7 @@ export const LocationContext: FunctionComponent<LocationContextProps> = ({ child
   return (
     <section className={`row ${styles.location}`}>
       <h2 className={styles.title} title={CONFIGS.APP.TRANSLATIONS?.CLICK_TO_CHANGE_COPY}>
-        <span role="img" aria-label='Location Point'>📍</span> {CONFIGS.APP.TRANSLATIONS?.ADVICE_SEARCHING} <strong className={styles.locationKey}>{name}</strong>!
+        <span role="img" aria-label='Location Point'>📍</span> {CONFIGS.APP.TRANSLATIONS?.ADVICE_SEARCHING} <strong data-testid='change-location' className={styles.locationKey}>{name}</strong>!
       </h2>
     </section>
   );
