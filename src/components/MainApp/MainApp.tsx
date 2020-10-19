@@ -3,6 +3,7 @@ import React, { FunctionComponent, ReactElement, useMemo } from 'react';
 
 import { getActiveLocation } from '../../store/location/location.selectors';
 import { getUpdatedResults } from '../../store/results/results.selectors';
+import { isPollingFailed, isPollingLoading } from '../../store/polling/polling.selectors';
 import { LocationContext } from '../LocationContext/LocationContext';
 import { PickCategory } from '../PickCategory/PickCategory';
 import { ResultsList } from '../ResultsList/ResultsList';
@@ -15,6 +16,8 @@ export const MainApp: FunctionComponent = ({ children, ...props }): ReactElement
   const activeLocation = useSelector((state: RootState) => activeLocationState(state));
 
   const updatedResults = useSelector(getUpdatedResults);
+  const hasPollingFailed = useSelector(isPollingFailed);
+  const hasPollingLoading = useSelector(isPollingLoading);
 
   return (
     <div className='OnlyPizzaBurgerOrSushiApp' data-testid='main-app'>
@@ -24,7 +27,11 @@ export const MainApp: FunctionComponent = ({ children, ...props }): ReactElement
         <PickCategory />
         <hr className='fade-rule'/>
 
-        <ResultsList results={updatedResults}/>
+        <ResultsList
+          isFailed={hasPollingFailed}
+          isLoading={hasPollingLoading}
+          results={updatedResults}
+        />
 
         <hr className='fade-scrolling'/>
       </div>

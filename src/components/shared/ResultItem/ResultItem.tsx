@@ -14,7 +14,7 @@ export const ResultItem: FunctionComponent<ResultProps> = ({ children, ...props 
   return (
     <a
       className={styles.result}
-      href='#whatever-link'
+      href='#whatever-yelp-url'
       onClick={e => e.preventDefault()}
       title={`Go to ${result.name}`}
     >
@@ -27,7 +27,7 @@ export const ResultItem: FunctionComponent<ResultProps> = ({ children, ...props 
         <h4 className={styles.resultTitle}>{result.name}</h4>
 
         <p className={styles.resultDetails}>
-          <span>More info here</span>
+          <span>insert more info here</span>
         </p>
       </article>
     </a>

@@ -18,56 +18,16 @@ type ResultsListState = {
 
 const initialState: ResultsListState = {
   list: [
-    {
-      name: 'Stadtklause',
-      photo: 'https://s3-media0.fl.yelpcdn.com/bphoto/6V3_xCFK2xEpTktQaumnpQ/ls.jpg',
-      style: 'German',
-    },
-    {
-      name: 'elephant',
-      photo: 'https://s3-media0.fl.yelpcdn.com/bphoto/D6-sJ4_5N0XzQEx9tSgxVA/ls.jpg',
-      style: 'German',
-    },
-    {
-      name: 'elephant',
-      photo: 'https://s3-media0.fl.yelpcdn.com/bphoto/D6-sJ4_5N0XzQEx9tSgxVA/ls.jpg',
-      style: 'German',
-    },
-    {
-      name: 'elephant',
-      photo: 'https://s3-media0.fl.yelpcdn.com/bphoto/D6-sJ4_5N0XzQEx9tSgxVA/ls.jpg',
-      style: 'German',
-    },
-    {
-      name: 'elephant',
-      photo: 'https://s3-media0.fl.yelpcdn.com/bphoto/D6-sJ4_5N0XzQEx9tSgxVA/ls.jpg',
-      style: 'German',
-    },
-    {
-      name: 'elephant',
-      photo: 'https://s3-media0.fl.yelpcdn.com/bphoto/D6-sJ4_5N0XzQEx9tSgxVA/ls.jpg',
-      style: 'German',
-    },
-    {
-      name: 'elephant',
-      photo: 'https://s3-media0.fl.yelpcdn.com/bphoto/D6-sJ4_5N0XzQEx9tSgxVA/ls.jpg',
-      style: 'German',
-    },
-    {
-      name: 'elephant',
-      photo: 'https://s3-media0.fl.yelpcdn.com/bphoto/D6-sJ4_5N0XzQEx9tSgxVA/ls.jpg',
-      style: 'German',
-    },
-    {
-      name: 'elephant',
-      photo: 'https://s3-media0.fl.yelpcdn.com/bphoto/D6-sJ4_5N0XzQEx9tSgxVA/ls.jpg',
-      style: 'German',
-    },
-    {
-      name: 'elephant',
-      photo: 'https://s3-media0.fl.yelpcdn.com/bphoto/D6-sJ4_5N0XzQEx9tSgxVA/ls.jpg',
-      style: 'German',
-    },
+    // {
+    //   name: 'Stadtklause',
+    //   photo: 'https://s3-media0.fl.yelpcdn.com/bphoto/6V3_xCFK2xEpTktQaumnpQ/ls.jpg',
+    //   style: 'German',
+    // },
+    // {
+    //   name: 'elephant',
+    //   photo: 'https://s3-media0.fl.yelpcdn.com/bphoto/D6-sJ4_5N0XzQEx9tSgxVA/ls.jpg',
+    //   style: 'German',
+    // },
   ],
 };
 
