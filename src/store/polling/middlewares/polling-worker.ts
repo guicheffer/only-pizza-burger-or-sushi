@@ -5,7 +5,6 @@ import { fetchResults } from '../services/fetch-results';
 import { setPollingComplete, setPollingFailed } from '../polling.slices';
 import { updateResults } from '../../results/results.slices';
 import CONFIGS from '../../../app/configs';
-// import { updateForexRates } from '../../exchange/rates/rates.slices';
 
 // We could use kibana here, for instance, to track errors
 // For now let's stick with these fake ones haha...

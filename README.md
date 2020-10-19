@@ -1,25 +1,18 @@
-# 🍕 [Only "Pizza", "Burger" or "Sushi" Mini-App](#demo-url)
+# 🍕 [Only "Pizza", "Burger" or "Sushi" Mini-App](http://only-pizza-burger-or-sushi.guicheffer.me/)
 
 This is a mini POC/playground to display a few restaurants in Berlin with the "Pizza", "Burger" or "Sushi" categories.
 
-<!-- TODO: Add demo URL (#demo-url) -->
-- [The **Demo version** here](#demo-url)
+- [The **Demo version** here](http://only-pizza-burger-or-sushi.guicheffer.me/)
 
 ## Summary
 
-- [Demo](#demo-url)
-- [Quick preview](#quick-preview)
+- [Demo](http://only-pizza-burger-or-sushi.guicheffer.me/)
 - [Requirements](#requirements)
 - [Available Scripts](#available-scripts)
-- [Preview *(screenshots)*](#preview)
+- [Quick preview](#quick-preview)
 - [Tests Coverage](#tests-coverage)
 - [Ideas](#ideas)
 - [Learn more](#learn-more)
-
-## Quick preview
-
-<!-- TODO: Add demo URL (#demo-gif) -->
-![how app works](#demo-gif)
 
 ## Requirements
 
@@ -36,7 +29,7 @@ It also correctly bundles React in production mode and optimizes the build for t
 
 ### `make dev`
 
-**ps**. Remember you can also use production's URL directly [here](#demo-url).
+**ps**. Remember you can also use production's URL directly [here](http://only-pizza-burger-or-sushi.guicheffer.me/).
 
 Runs the app in the development mode. 🔥<br />
 Make sure you manually open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -57,9 +50,9 @@ Install dependencies from yarn's package.json.
 
 Please execute that in order to be aware of what commands you might be able to run.
 
-## Preview
+## Quick preview
 
-_soon_
+![how app works](./docs/preview.gif)
 
 ## Ideas
 
