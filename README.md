@@ -67,6 +67,8 @@ Please execute that in order to be aware of what commands you might be able to r
   - ...honestly, acessibility looks terrible! 😔
 - [ ] **Architectural** <br/>
   - The simple architecture choices here were taking agility into account, that's why I considered not improving it a lot;
+  - Timeouts
+    I haven't included any, but would be good if I had...
   - Tests
     - omg, there were lots of spaces for tests here, however, I only added some because of time-spacing :(
 - [ ] **Performance** <br/>
