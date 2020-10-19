@@ -1,0 +1,28 @@
+@import '../../../commons/styles/defaults/colors';
+@import '../../../commons/styles/defaults/typography';
+
+.result {
+  display: flex;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.photo {
+  margin: 0;
+  padding: 0;
+
+  img {
+    border-radius: 100%;
+    width: 12vh;
+  }
+}
+
+.resultInfo {
+  margin-left: 2 * $base-design-unit;
+}
+
+.resultTitle { margin: $base-design-unit; }
+
+.resultDetails {
+  font-size: $font-size-mid;
+}

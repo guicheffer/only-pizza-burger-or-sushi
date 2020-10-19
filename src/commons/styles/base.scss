@@ -1,0 +1,53 @@
+@import './defaults/breakpoints';
+@import './defaults/colors';
+@import './defaults/fade-rule';
+@import './defaults/typography';
+
+@mixin selection-colors {
+  background-color: var(--app-primary-color);
+  color: $white;
+}
+
+::-moz-selection { @include selection-colors; }
+::selection { @include selection-colors; }
+
+body {
+  background-color: var(--app-primary-background-color);
+  color: $white;
+  cursor: default;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+ *
+ * Please test that on mobile!
+ *
+ * I swear I did my best on the responsive skills / overall UX adaptions! haha :)
+ *
+*/
+
+#only-pizza-burger-or-sushi-app {
+  .container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60%;
+
+    @media (max-width: $screen-sm-max) {
+      margin: 0;
+      padding: 0 $base-design-unit;
+      width: 100%;
+    }
+  }
+
+  .row {
+    width: 100%;
+  }
+}

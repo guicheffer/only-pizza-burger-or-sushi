@@ -1,0 +1,15 @@
+@import './defaults/colors';
+@import './defaults/typography';
+
+.fade-rule {
+  appearance: none;
+  border: 0;
+  height: 1px;
+  background-color: blue;
+  width: 100%;
+  margin: 5 * $base-design-unit auto;
+  background-image: linear-gradient(to left, #339bbe 2%, white 50%, #339bbe 98%);
+  background-image: -o-linear-gradient(to left, #339bbe 2%, white 50%, #339bbe 98%);
+  background-image: -moz-linear-gradient(to left, #339bbe 2%, white 50%, #339bbe 98%);
+  background-image: -webkit-linear-gradient(to left, #339bbe 2%, white 50%, #339bbe 98%);
+}

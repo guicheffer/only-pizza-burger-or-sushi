@@ -1,0 +1,40 @@
+@import '../../commons/styles/defaults/typography';
+
+.categoryPickAdvice {
+  font-weight: $font-weight-semi;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: (2 * $base-design-unit) 0 0 0;
+
+  & > li {
+    flex: 1;
+    text-align: center;
+
+    &:not(:last-child) { margin-right: 20%; }
+
+    & > [type=radio] {
+      display: none;
+
+      &:checked + label {
+        filter: grayscale(0);
+      }
+    }
+  }
+}
+
+.itemLogo {
+  cursor: pointer;
+  filter: grayscale(1);
+  font-size: $font-size-huge;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  transition: filter .2s ease-out;
+}
