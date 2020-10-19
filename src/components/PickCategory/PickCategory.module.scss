@@ -31,10 +31,12 @@
 
 .itemLogo {
   cursor: pointer;
-  filter: grayscale(1);
+  filter: grayscale(1) blur(0);
   font-size: $font-size-huge;
   margin: 0;
   padding: 0;
   user-select: none;
   transition: filter .2s ease-out;
+
+  &:hover { filter: grayscale(1) blur(3px); }
 }

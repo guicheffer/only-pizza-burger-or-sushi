@@ -1,7 +1,10 @@
 @import './defaults/breakpoints';
 @import './defaults/colors';
-@import './defaults/fade-rule';
 @import './defaults/typography';
+
+// TODO: I know, these ones could be extracted to somewhere else - I hate them honestly haha
+@import './defaults/mixins/fade-rule';
+@import './defaults/mixins/fade-scrolling';
 
 @mixin selection-colors {
   background-color: var(--app-primary-color);
@@ -11,9 +14,14 @@
 ::-moz-selection { @include selection-colors; }
 ::selection { @include selection-colors; }
 
+body,
+a, a:hover, a:active {
+  color: $white;
+  text-decoration: none;
+}
+
 body {
   background-color: var(--app-primary-background-color);
-  color: $white;
   cursor: default;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

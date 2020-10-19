@@ -1,0 +1,16 @@
+@import './defaults/colors';
+@import './defaults/typography';
+
+.fade-scrolling {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  bottom: 0;
+  box-shadow: 0 0 25vh 12vh $white;
+  height: 0px;
+  height: 1px;
+  left: 0;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+}

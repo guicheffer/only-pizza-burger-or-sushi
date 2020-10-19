@@ -22,9 +22,11 @@ export const MainApp: FunctionComponent = ({ children, ...props }): ReactElement
         <LocationContext name={activeLocation.title} />
 
         <PickCategory />
-        <hr className="fade-rule"></hr>
+        <hr className='fade-rule'/>
 
         <ResultsList results={updatedResults}/>
+
+        <hr className='fade-scrolling'/>
       </div>
     </div>
   );

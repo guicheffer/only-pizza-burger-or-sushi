@@ -12,19 +12,24 @@ export const ResultItem: FunctionComponent<ResultProps> = ({ children, ...props 
   const { result } = props;
 
   return (
-    <article className={styles.result}>
+    <a
+      className={styles.result}
+      href='#whatever-link'
+      onClick={e => e.preventDefault()}
+      title={`Go to ${result.name}`}
+    >
       {/* TODO: In a real world app, we could use srcset for different sizes to improve performance! */}
       <figure className={styles.photo}>
         <img src={result.photo} alt={result.name} title={result.name} />
       </figure>
 
-      <div className={styles.resultInfo}>
+      <article className={styles.resultInfo}>
         <h4 className={styles.resultTitle}>{result.name}</h4>
 
         <p className={styles.resultDetails}>
           <span>More info here</span>
         </p>
-      </div>
-    </article>
+      </article>
+    </a>
   );
 }

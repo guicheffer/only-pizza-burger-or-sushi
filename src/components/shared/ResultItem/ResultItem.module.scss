@@ -2,9 +2,16 @@
 @import '../../../commons/styles/defaults/typography';
 
 .result {
-  display: flex;
-  text-align: left;
   align-items: flex-start;
+  border-radius: 3 * $base-design-unit;
+  border: 1px dashed white;
+  display: flex;
+  outline: none;
+  padding: $base-design-unit;
+  text-align: left;
+  transition: box-shadow .2s ease-out;
+
+  &:hover { box-shadow: 0px 0px (3 * $base-design-unit) 0px $white; }
 }
 
 .photo {
@@ -24,5 +31,6 @@
 .resultTitle { margin: $base-design-unit; }
 
 .resultDetails {
-  font-size: $font-size-mid;
+  font-size: $font-size-sm;
+  margin-left: $base-design-unit;
 }
