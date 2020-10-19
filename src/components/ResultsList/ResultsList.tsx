@@ -17,8 +17,6 @@ export const ResultsList: FunctionComponent<ResultsListProps> = ({ children, ...
   const { PUBLIC_URL } = process.env;
   const shouldShowResults = !isFailed && !isLoading && !!results.length;
 
-  console.log(shouldShowResults, ' why? ', isFailed, isLoading, results.length);
-
   return (
     <section className={`row ${styles.results}`}>
       {!shouldShowResults && (
@@ -28,7 +26,7 @@ export const ResultsList: FunctionComponent<ResultsListProps> = ({ children, ...
       { shouldShowResults && (
         <>
           <ol className={styles.resultsList}>
-            {results.map(result => (<li><ResultItem result={result}/></li>))}
+            {results.map(result => (<li key={result.id}><ResultItem result={result}/></li>))}
           </ol>
         </>
       )}

@@ -8,6 +8,7 @@
   display: flex;
   outline: none;
   padding: $base-design-unit;
+  position: relative;
   text-align: left;
   transition: box-shadow .2s ease-out;
 
@@ -20,7 +21,8 @@
 
   img {
     border-radius: 100%;
-    width: 12vh;
+    height: 10vh;
+    width: 10vh;
   }
 }
 
@@ -31,6 +33,29 @@
 .resultTitle { margin: $base-design-unit; }
 
 .resultDetails {
+  align-items: center;
   font-size: $font-size-sm;
   margin-left: $base-design-unit;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.resultDetailsItem {
+  &:not(:last-child) {
+    border-right: 1px solid $white;
+    margin-right: $base-design-unit;
+    padding-right: $base-design-unit;
+  }
+}
+
+.resultDetailsIcon {
+  font-size: 1.5 * $base-design-unit;
+  margin-right: $base-design-unit / 2;
+}
+
+.isOpenIcon {
+  position: absolute;
+  right: 15px;
+  top: -10px;
 }

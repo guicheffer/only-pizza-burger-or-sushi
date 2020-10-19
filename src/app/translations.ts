@@ -10,4 +10,6 @@ export default {
   ADVICE_SEARCHING: 'You are looking for restaurants in',
   DEFAULT_LOCATION: 'Berlin, Germany',
   CLICK_TO_CHANGE_COPY: 'click here to change the location',
+  OPEN_TEXT: 'Open',
+  CLOSED_TEXT: 'Closed',
 } as DefaultTranslationsType;

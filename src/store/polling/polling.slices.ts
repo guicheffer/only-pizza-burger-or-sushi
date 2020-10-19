@@ -1,5 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+import { ExpectedRequestPayload } from './middlewares/polling-watcher';
+
 export enum PollingState { COMPLETE, FAILED, STARTED, STOPPED };
 
 const initialState: { progress: PollingState } = {
@@ -16,7 +18,7 @@ const pollingSlice = createSlice({
     setPollingFailed(state) {
       state.progress = PollingState.FAILED;
     },
-    setPollingStarted(state, _: { payload: string }) {
+    setPollingStarted(state, _: { payload: ExpectedRequestPayload }) {
       state.progress = PollingState.STARTED;
     },
     setPollingStopped(state) {

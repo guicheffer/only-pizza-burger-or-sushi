@@ -4,9 +4,15 @@ import CONFIGS from '../../app/configs';
 
 type LocationId = string;
 
+interface LocationCoordinates {
+  readonly latitude: number;
+  readonly longitude: number;
+}
+
 export type Location = {
   id: LocationId;
   title: string;
+  coordinates: LocationCoordinates;
 }
 
 type LocationState = {
@@ -14,9 +20,14 @@ type LocationState = {
 }
 
 const initialState: LocationState = {
+  // YES, this is pretty hack!
   active: {
     id: 'berlin',
-    title: CONFIGS.APP.TRANSLATIONS?.DEFAULT_LOCATION as string, // YES, it's pretty hack!
+    title: CONFIGS.APP.TRANSLATIONS?.DEFAULT_LOCATION as string,
+    coordinates: {
+      latitude: 52.5200,
+      longitude: 13.4050,
+    },
   },
 };
 

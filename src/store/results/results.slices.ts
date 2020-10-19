@@ -1,14 +1,18 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-type Address = {
-  fullAddress: string;
+type Location = {
+  address1?: string;
 }
 
 export type Result = {
+  id: string;
   name: string;
-  photo: string;
+  image_url: string;
   style: string;
-  address?: Address;
+  location: Location;
+  price: string;
+  is_closed: Boolean;
+  rating: number;
   howExpensive?: number;
 }
 
@@ -20,13 +24,11 @@ const initialState: ResultsListState = {
   list: [
     // {
     //   name: 'Stadtklause',
-    //   photo: 'https://s3-media0.fl.yelpcdn.com/bphoto/6V3_xCFK2xEpTktQaumnpQ/ls.jpg',
-    //   style: 'German',
+    //   image_url: 'https://s3-media0.fl.yelpcdn.com/bphoto/6V3_xCFK2xEpTktQaumnpQ/ls.jpg',
     // },
     // {
     //   name: 'elephant',
-    //   photo: 'https://s3-media0.fl.yelpcdn.com/bphoto/D6-sJ4_5N0XzQEx9tSgxVA/ls.jpg',
-    //   style: 'German',
+    //   image_url: 'https://s3-media0.fl.yelpcdn.com/bphoto/D6-sJ4_5N0XzQEx9tSgxVA/ls.jpg',
     // },
   ],
 };

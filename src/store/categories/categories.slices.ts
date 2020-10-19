@@ -9,6 +9,7 @@ export type Category = {
   emojiSymbol: EmojiString;
   id: CategoryId;
   title: string;
+  variations: string;
 }
 
 type CategoryState = {
@@ -17,22 +18,25 @@ type CategoryState = {
 }
 
 const initialState: CategoryState = {
-  active: 'burger',
+  active: CONFIGS.APP.DEFAULT_ACTIVE_CATEGORY as CategoryId,
   list: [
     {
       emojiSymbol: '🍕',
       id: 'pizza',
       title: CONFIGS.APP.TRANSLATIONS?.CATEGORY_PIZZA as string,
+      variations: 'pizza,pizzas,calzone',
     },
     {
       emojiSymbol: '🍔',
       id: 'burger',
       title: CONFIGS.APP.TRANSLATIONS?.CATEGORY_BURGER as string,
+      variations: 'burgers,bürger,bürgers,burguer,burguers',
     },
     {
       emojiSymbol: '🍣',
       id: 'sushi',
       title: CONFIGS.APP.TRANSLATIONS?.CATEGORY_SUSHI as string,
+      variations: 'sushi,viet,vietnamese',
     },
   ]
 };

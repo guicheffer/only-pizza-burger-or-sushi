@@ -18,7 +18,11 @@
 .locationKey {
   animation: location-key 1s ease-out;
   cursor: pointer;
+  text-decoration: underline;
   transition: color .2s ease-out;
 
-  &:hover { color: $gray; }
+  &:hover {
+    color: $gray;
+    text-decoration: none;
+  }
 }

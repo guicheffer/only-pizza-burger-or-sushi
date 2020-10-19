@@ -4,11 +4,20 @@ import {
   setPollingStarted,
   setPollingStopped,
 } from '../polling.slices';
+import { Location } from '../../location/location.slices';
 import { pollingWorker } from './polling-worker';
+
+type Term = 'restaurants';
+
+export interface ExpectedRequestPayload {
+  location: Location;
+  categories: string;
+  readonly term: Term;
+}
 
 export type WatchedPollingActionType = {
   type: typeof setPollingStarted.type;
-  payload: string; // TODO: Check payload string
+  payload: ExpectedRequestPayload;
 };
 
 export function* pollingWatcher() {

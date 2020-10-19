@@ -7,7 +7,10 @@ interface ConfigsInterface {
   APP: {
     API_URLS: DefaultApiUrlsType;
     LOCALE_STRING: string;
+    TERM: string;
     TRANSLATIONS?: DefaultTranslationsType;
+    DEFAULT_ACTIVE_CATEGORY: string;
+    MAX_RESULTS: number;
   },
   KEYCODES: {
     [key: string]: number;
@@ -18,7 +21,10 @@ const CONFIGS = {
   APP: {
     API_URLS,
     LOCALE_STRING: 'de-DE',
+    TERM: 'restaurants',
     TRANSLATIONS,
+    DEFAULT_ACTIVE_CATEGORY: 'burger',
+    MAX_RESULTS: 10,
   },
 } as ConfigsInterface;
 
